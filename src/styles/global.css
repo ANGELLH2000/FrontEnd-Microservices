@@ -1,0 +1,11 @@
+:root {
+    /*  Colores */
+    --bg-container: #F0F2F5;
+    --bg-chat: #FFFFFF;
+    --primary-color: #ff6600;
+    --secondary-color: #222;
+    
+    /*  Bordes */
+    --border-radius-chat: 16px;
+    --border-radius: 5px;
+}
