@@ -65,6 +65,7 @@ body{
 
 .sidebar {
     background:var(--bg-container);
+    box-sizing: border-box; 
 }
 .chat{
     background-color: var(--bg-chat);

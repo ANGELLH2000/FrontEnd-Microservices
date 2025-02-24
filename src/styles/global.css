@@ -1,11 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
 :root {
     /*  Colores */
     --bg-container: #F0F2F5;
     --bg-chat: #FFFFFF;
     --primary-color: #ff6600;
     --secondary-color: #222;
-    
+
+    /*  Fuentes */
+    --font-primary: 'Inter', sans-serif;
+
     /*  Bordes */
     --border-radius-chat: 16px;
     --border-radius: 5px;
+
+    /* Link Item */
+    --li-bg-active: #FFFFFF;
+    --li-font: var(--font-primary);
+    --li-font-size: .875rem;
+    /* 14px */
+    --li-font-weight: 400;
+    --li-height: 2.6875rem;
+    /* 43px */
+    --li-color: #19213D;
+    --li-color-h3-title: #BAC0CC;
+    --li-color-h3-chat: #666F8D;
+
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
