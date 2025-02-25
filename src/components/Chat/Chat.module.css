@@ -34,3 +34,8 @@
     margin-top: .3125rem;
     margin-bottom: 1.25rem;
 }
+@media (min-width: 300px) and (max-width: 767px){
+    .ListMessages, .formContainer {
+        padding: 0 1.5rem;
+    }
+}
