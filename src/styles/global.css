@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    /*  Colores */
+    --bg-container: #F0F2F5;
+    --bg-chat: #FFFFFF;
+    --primary-color: #ff6600;
+    --secondary-color: #666F8D;
+
+    /*  Fuentes */
+    --font-primary: 'Inter', sans-serif;
+
+    /*  Bordes */
+    --border-radius-chat: 16px;
+    --border-radius: 5px;
+
+    /* Link Item */
+    --li-bg-active: #FFFFFF;
+    --li-font: var(--font-primary);
+    --li-font-size: .875rem;
+    /* 14px */
+    --li-font-weight: 400;
+    --li-height: 2.6875rem;
+    /* 43px */
+    --li-color: #19213D;
+    --li-color-h3-title: #BAC0CC;
+    --li-color-h3-chat: #666F8D;
+
+    /*  Chat */
+    --chat-top-bg: #FFFFFF;
+    --chat-top-border: #F0F2F5;
+    --chat-top-heitgh: 3.3125rem; /* 53px */
+    --chat-top-color:#19213D;
+    --chat-top-font: var(--font-primary);
+    --chat-top-font-size: 1rem;
+    /* 16px */
+    --chat-top-font-weight: 500;
+    --chat-message-bg: #FFFFFF;
+    --chat-message-font: var(--font-primary);
+    --chat-message-font-size:.875rem;
+    /* 14px */
+    --chat-message-font-weight: 400;
+    --chat-message-font-weight-name: 600;
+    --chat-message-color:#666F8D;
+    --chat-message-color-name: #19213D;
+    --chat-formChat-bg: #FFFFFF;
+
+    /* Buttom */
+    --btn-font: var(--font-primary);
+    --btn-font-size: .875rem;
+    /* 14px */
+    --btn-font-weight: 500;
+    --btn-height: 2rem;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}

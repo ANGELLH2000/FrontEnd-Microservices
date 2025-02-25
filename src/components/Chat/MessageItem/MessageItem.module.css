@@ -1,0 +1,47 @@
+.container {
+    background-color: var(--chat-message-bg);
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 12px;
+    & img{
+        height: 2rem;
+    }
+    &.system {
+        box-sizing: border-box;
+        padding: 1.5rem;
+        /*24px*/
+        border-radius: 1rem;
+        border: 1px solid #F0F2F5;
+        filter: drop-shadow(0px 1px 3px rgba(25, 33, 61, 0.10));
+        
+    }
+
+    &.user {
+        background-color: transparent;
+    }
+
+    & div.content {
+        display: flex;
+        flex-direction: column;
+        & div{
+            display: flex;
+            flex-direction: row;
+            gap: 1.5rem;
+            
+        }
+        & span,p {
+            font-family: var(--chat-message-font);
+            font-size: var(--chat-message-font-size);
+            font-weight: var(--chat-message-font-weight);
+            color: var(--chat-message-color);
+            &.name{
+                color: var(--chat-message-color-name);
+                font-weight: var(--chat-message-font-weight-name);
+            }
+        }
+
+    }
+}
