@@ -1,7 +1,9 @@
 .btn{
+    cursor: pointer;
     font-family: var(--btn-font);
     font-size: var(--btn-font-size);
     font-weight: var(--btn-font-weight);
+    width: fit-content;
     height: var(--btn-height);
     padding: .5rem 1rem;
     border: none;

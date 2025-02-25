@@ -1,22 +1,29 @@
+@import '/src/styles/animations.css';
 .container {
     box-sizing: border-box;
     width: 100%;
     filter: drop-shadow(0px 1px 3px rgba(25, 33, 61, 0.10));
     background-color: var(--chat-formChat-bg);
-    padding: 1.5rem 1.5rem 1rem 1.5rem ;
+    padding: 1.5rem 1.5rem 1rem 1.5rem;
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    & hr{
-        background-color:#F0F2F5;
+    animation: standup 1.5s ease-in-out forwards;
+    &.clear{
+        display: none;
+    }
+    & hr {
+        background-color: #F0F2F5;
         width: 100%;
         height: 1px;
         border: none;
         padding: 0;
         margin: 0;
     }
-    & textarea{
+
+    & textarea {
+        opacity: 0;
         width: 100%;
         resize: none;
         border: none;
@@ -26,11 +33,27 @@
         font-weight: var(--chat-message-font-weight);
         color: var(--chat-message-color);
         overflow: hidden;
+        animation: show 1.5s ease-in-out forwards;
+        animation-delay: .8s;
     }
-    & .bottomForm{
+
+    & .bottomForm {
+        opacity: 0;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        animation: show 1.5s ease-in-out forwards;
+        animation-delay: .8s;
+    }
+
+    & p {
+        opacity: 0;
+        font-family: var(--chat-message-font);
+        font-size: var(--chat-message-font-size);
+        font-weight: var(--chat-message-font-weight);
+        color: var(--chat-message-color);
+        animation: fanout 2s ease-in-out infinite;
+        animation-delay: 1.5s;
     }
 }

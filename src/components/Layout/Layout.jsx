@@ -6,7 +6,7 @@ const Layout = () => {
     return (
         <div className={styles.container}>
             <div className={styles.sidebar}><SideBar /></div>
-            <div className={styles.chat}><Chat /></div>
+            <div className={styles.chat}><Chat idchat={''}/></div>
         </div>
     );
 };
