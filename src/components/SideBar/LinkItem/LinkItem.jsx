@@ -41,7 +41,7 @@ const LinkItem = ({ LinkData}) => {
     if (LinkData?.type === 'LinkChat') {
         return (
             <li className={styles.container}>
-                <img src="../src/icons/chat.svg" alt="Icono de Link item" />
+                <img src="/icons/chat.svg" alt="Icono de Link item" />
                 <span>Chats</span>
                 {LinkData.chats > 0 && <p className='flex-row'>{LinkData.chats}</p>}
             </li>
@@ -49,8 +49,8 @@ const LinkItem = ({ LinkData}) => {
     } else if (LinkData?.type === 'Link') {
         return (
             <li className={`${styles.container} ${LinkData.isActive === true ? styles.active : ''}`}>
-                {LinkData.svg === 'Inicio' && <><img src="../src/icons/home.svg" alt="Icono de Home item" /><a href={LinkData.link}>Inicio</a></>}
-                {LinkData.svg === 'Lib' && <><img src="../src/icons/book.svg" alt="Icono de Lib item" /><a href={LinkData.link}>Librería</a></>}
+                {LinkData.svg === 'Inicio' && <><img src="/icons/home.svg" alt="Icono de Home item" /><a href={LinkData.link}>Inicio</a></>}
+                {LinkData.svg === 'Lib' && <><img src="/icons/book.svg" alt="Icono de Lib item" /><a href={LinkData.link}>Librería</a></>}
             </li>
         );
     } else if (LinkData?.type === 'Title') {

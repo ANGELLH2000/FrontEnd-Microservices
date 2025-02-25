@@ -26,7 +26,7 @@ const MessageItem = ({ prop }) => {
     if (prop?.autor === 'system') {
         return (
             <div className={`${styles.container} ${styles.system}`}>
-                <img src="../src/icons/logo.svg" alt="Logo del Sistema" />
+                <img src="/icons/logo.svg" alt="Logo del Sistema" />
                 <div className={styles.content}>
                     <div>
                         <span className={styles.name}>Ciphy.io</span>
@@ -39,7 +39,7 @@ const MessageItem = ({ prop }) => {
     } else if (prop?.autor === 'user') {
         return (
             <div className={`${styles.container} ${styles.user}`}>
-                <img src="../src/icons/avatar.svg" alt="Logo de avatar" />
+                <img src="/icons/avatar.svg" alt="Logo de avatar" />
                 <div className={styles.content}>
                     <div>
                         <span className={styles.name}>{prop.name}</span>
