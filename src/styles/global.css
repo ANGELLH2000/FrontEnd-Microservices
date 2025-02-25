@@ -26,6 +26,31 @@
     --li-color-h3-title: #BAC0CC;
     --li-color-h3-chat: #666F8D;
 
+    /*  Chat */
+    --chat-top-bg: #FFFFFF;
+    --chat-top-border: #F0F2F5;
+    --chat-top-heitgh: 3.3125rem; /* 53px */
+    --chat-top-color:#19213D;
+    --chat-top-font: var(--font-primary);
+    --chat-top-font-size: 1rem;
+    /* 16px */
+    --chat-top-font-weight: 500;
+    --chat-message-bg: #FFFFFF;
+    --chat-message-font: var(--font-primary);
+    --chat-message-font-size:.875rem;
+    /* 14px */
+    --chat-message-font-weight: 400;
+    --chat-message-font-weight-name: 600;
+    --chat-message-color:#666F8D;
+    --chat-message-color-name: #19213D;
+    --chat-formChat-bg: #FFFFFF;
+
+    /* Buttom */
+    --btn-font: var(--font-primary);
+    --btn-font-size: .875rem;
+    /* 14px */
+    --btn-font-weight: 500;
+    --btn-height: 2rem;
 }
 
 .flex-row {

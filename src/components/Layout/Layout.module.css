@@ -9,9 +9,9 @@ body{
 }
 
 /* Desktop grande (1440px o más) */
-@media (min-width: 1440px) {
+@media (min-width: 1848px) {
     .container {
-        grid-template-columns: 1fr repeat(16, 90px) 1fr ;
+        grid-template-columns: auto repeat(16, 90px) auto  ;
     }
     .sidebar{
         grid-column: 2 / span 4;
@@ -22,7 +22,7 @@ body{
 }
 
 /* Desktop estándar (1440px - 1280px) */
-@media (min-width: 1280px) and (max-width: 1439px) {
+@media (min-width: 1280px) and (max-width: 1847px) {
     .container {
         grid-template-columns: repeat(16, 1fr);
         /* 12 columnas */
@@ -70,4 +70,5 @@ body{
 .chat{
     background-color: var(--bg-chat);
     border-radius: var(--border-radius-chat);
+    overflow: hidden;
 }

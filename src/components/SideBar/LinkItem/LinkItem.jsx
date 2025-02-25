@@ -1,5 +1,40 @@
 import styles from './LinkItem.module.css';
-const LinkItem = ({ LinkData, link, isActive, chats, img }) => {
+
+
+/**
+ * Componente LinkItem
+ * 
+ * Este componente renderiza diferentes tipos de elementos de lista basados en la propiedad `type` de `LinkData`.
+ * 
+ * @param {Object} props - Las propiedades del componente.
+ * @param {Object} props.LinkData - Los datos del enlace.
+ * @param {string} props.LinkData.type - El tipo de enlace. Puede ser 'LinkChat', 'Link', 'Chat' o 'Title'.
+ * @param {number} [props.LinkData.chats] - El número de chats (solo para 'LinkChat').
+ * @param {boolean} [props.LinkData.isActive] - Indica si el enlace está activo.
+ * @param {string} [props.LinkData.svg] - El tipo de icono a mostrar (solo para 'Link').
+ * @param {string} [props.LinkData.link] - La URL del enlace (solo para 'Link').
+ * @param {string} [props.LinkData.text] - El texto del título (solo para 'Title').
+ * @param {string} [props.LinkData.id] - El ID del chat (solo para 'Chat').
+ * 
+ * @example
+ * // Ejemplo de uso para 'LinkChat'
+ * <LinkItem LinkData={{ type: 'LinkChat', chats: 5 }} />
+ * 
+ * @example
+ * // Ejemplo de uso para 'Link'
+ * <LinkItem LinkData={{ type: 'Link', svg: 'Inicio', link: '/home', isActive: true }} />
+ * 
+ * @example
+ * // Ejemplo de uso para 'Title'
+ * <LinkItem LinkData={{ type: 'Title', text: 'Mi Título', isActive: false }} />
+ * 
+ * @example
+ * // Ejemplo de uso para 'Chat'
+ * <LinkItem LinkData={{ type: 'Chat', id: '12345', isActive: true }} />
+ * 
+ * @returns {JSX.Element} El elemento de lista correspondiente al tipo de enlace.
+ */
+const LinkItem = ({ LinkData}) => {
     //Type: LinkChat / Link / Chat / Title
 
     // Verifica si linkData existe antes de acceder a sus propiedades 'Link?'
