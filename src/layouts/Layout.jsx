@@ -1,5 +1,5 @@
-import Chat from "../Chat/Chat";
-import SideBar from "../SideBar/SideBar";
+import Chat from "../components/Chat/Chat";
+import SideBar from "../components/SideBar/SideBar";
 import styles from "./Layout.module.css";
 
 const Layout = () => {
