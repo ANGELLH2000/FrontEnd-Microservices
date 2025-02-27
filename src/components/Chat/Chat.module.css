@@ -1,4 +1,5 @@
 @import '/src/styles/animations.css';
+
 .chat {
     height: 95vh;
     filter: drop-shadow(0px 1px 3px rgba(25, 33, 61, 0.10));
@@ -8,7 +9,7 @@
 }
 
 .ListMessages {
-    flex-grow: 1; 
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
     gap: 2.5rem;
@@ -22,9 +23,12 @@
     /* 🔥 Degradado en el borde inferior */
     -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 0));
     mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 0));
-    opacity: 0;
-    animation: show 2s ease-in-out forwards;
-    animation-delay: .8s;
+
+    &.show {
+        opacity: 0;
+        animation: show 2s ease-in-out forwards;
+        animation-delay: .8s;
+    }
 }
 
 .formContainer {
@@ -34,8 +38,11 @@
     margin-top: .3125rem;
     margin-bottom: 1.25rem;
 }
-@media (min-width: 300px) and (max-width: 767px){
-    .ListMessages, .formContainer {
+
+@media (min-width: 300px) and (max-width: 767px) {
+
+    .ListMessages,
+    .formContainer {
         padding: 0 1.5rem;
     }
 }

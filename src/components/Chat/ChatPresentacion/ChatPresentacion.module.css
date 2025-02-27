@@ -1,13 +1,13 @@
 @import '/src/styles/animations.css';
 .container{
     opacity: 0;
-    animation: show 1s ease-in-out forwards;
     flex-grow: 1; /* Se expandirá hasta ocupar todo el espacio posible */
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    animation: show 1s ease-in-out forwards;
     & h1{
         font-family: var(--font-primary);
         font-weight: 700;
