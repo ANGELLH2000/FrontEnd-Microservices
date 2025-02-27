@@ -50,8 +50,8 @@ body{
     }
 }
 
-/* Móvil grande (767px - 370px) */
-@media (min-width: 370px) and (max-width: 767px) {
+/* Móvil grande (767px - 200px) */
+@media (min-width: 200px) and (max-width: 767px) {
     .container {
         grid-template-columns: repeat(4, 1fr);
         /* 4 columnas */
