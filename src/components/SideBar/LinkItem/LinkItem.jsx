@@ -1,3 +1,4 @@
+import { Link } from 'react-router';
 import styles from './LinkItem.module.css';
 
 
@@ -49,8 +50,8 @@ const LinkItem = ({ LinkData}) => {
     } else if (LinkData?.type === 'Link') {
         return (
             <li className={`${styles.container} ${LinkData.isActive === true ? styles.active : ''}`}>
-                {LinkData.svg === 'Inicio' && <><img src="/icons/home.svg" alt="Icono de Home item" /><a href={LinkData.link}>Inicio</a></>}
-                {LinkData.svg === 'Lib' && <><img src="/icons/book.svg" alt="Icono de Lib item" /><a href={LinkData.link}>Librería</a></>}
+                {LinkData.svg === 'Inicio' && <><img src="/icons/home.svg" alt="Icono de Home item" /><Link to={LinkData.link}>Inicio</Link></>}
+                {LinkData.svg === 'Lib' && <><img src="/icons/book.svg" alt="Icono de Lib item" /><Link to={LinkData.link}>Librería</Link></>}
             </li>
         );
     } else if (LinkData?.type === 'Title') {
@@ -63,7 +64,7 @@ const LinkItem = ({ LinkData}) => {
     else if (LinkData?.type === 'Chat') {
         return (
             <li className={`${styles.container} ${LinkData.isActive === true ? styles.active : ''}`}>
-                <a href=""><h3 className={styles.chat}>ID: {LinkData.id}</h3></a>
+                <Link to={LinkData.link}><h3 className={styles.chat}>ID: {LinkData.id}</h3></Link>
             </li>
         );
     }else{

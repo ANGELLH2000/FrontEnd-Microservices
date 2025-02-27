@@ -55,6 +55,7 @@ body{
     .container {
         grid-template-columns: repeat(4, 1fr);
         /* 4 columnas */
+        row-gap: 0  ;
     }
     .sidebar{
         grid-column: span 4;
