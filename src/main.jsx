@@ -4,7 +4,7 @@ import App from './app'
 import './styles/global.css'// Importa el CSS global
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
+  
     <App/>
-  </StrictMode>,
+  
 )
