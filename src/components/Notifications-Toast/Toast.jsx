@@ -19,6 +19,7 @@ const Toast = () => {
                 hook.deleteToast();
                 setToastLoad(false)
                 setTimeout(() => {
+                    setmyToast(null);
                     setConsultaToast(prev => !prev);
                 }, 2000);
             }, 3000);
